@@ -6,7 +6,6 @@ def test_sum_two():
     assert result == 7, "3 + 4 should be 7. Both ints, test passed"
 
 def test_sum_two_invalid_type():
-    # with pytest.raises(TypeError, match="4.3 is not of the type <class 'int'>"):
     with pytest.raises(TypeError):
         sum_two(3, 4.3)
         sum_two(3, True)
